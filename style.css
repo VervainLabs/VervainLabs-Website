@@ -73,10 +73,10 @@ nav {
 }
 
 .logo img {
-  height: 100px;
+  height: 70px;
   width: auto;
   display: block;
-  transform: translateY(24px);
+  transform: translateY(7px);
 }
 
 .nav-actions {
@@ -87,7 +87,7 @@ nav {
 
 .social-links {
   display: flex;
-  gap: 1rem;
+  gap: 1.5rem;
 }
 
 .social-links a {
