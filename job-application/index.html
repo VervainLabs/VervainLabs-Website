@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Careers | Vervain Labs</title>
+
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="../assets/logo_full.png">
+
+  <!-- SEO -->
+  <meta name="description" content="Apply for jobs at Vervain Labs" />
+  <meta name="robots" content="index, follow" />
+</head>
+
+<body>
+
+  <!-- Background -->
+  <div class="bg-blur"></div>
+
+  <!-- Header -->
+<header class="header glass">
+
+  <div class="logo-section">
+    <img src="../assets/logo_full.png" alt="Company Logo" class="logo" />
+    <h1>VERVAIN</h1>
+  </div>
+
+  <nav class="social-nav">
+
+    <a href="https://github.com/VervainLabs" target="_blank">
+      GitHub
+    </a>
+
+    <a href="https://discord.gg/B3cPuWsu3u" target="_blank">
+      Discord
+    </a>
+
+    <a href="https://linkedin.com/company/vervain-labs/" target="_blank">
+      LinkedIn
+    </a>
+
+    <a href="https://x.com/VervainLabs" target="_blank">
+      Twitter
+    </a>
+
+  </nav>
+
+</header>
+
+  <!-- Main Form -->
+  <main class="container">
+    <div class="form-card glass">
+
+      <h2>Career Application Form</h2>
+      <p class="subtitle">
+        Join our team and build something impactful.
+      </p>
+
+      <form id="applicationForm">
+
+        <!-- Name -->
+        <div class="row">
+          <div class="input-group">
+            <label>First Name</label>
+            <input type="text" name="firstName" required />
+          </div>
+
+          <div class="input-group">
+            <label>Last Name</label>
+            <input type="text" name="lastName" required />
+          </div>
+        </div>
+
+        <!-- Gender -->
+        <div class="input-group">
+          <label>Gender</label>
+
+          <div class="radio-group">
+            <label>
+              <input type="radio" name="gender" value="Male" required />
+              Male
+            </label>
+
+            <label>
+              <input type="radio" name="gender" value="Female" required />
+              Female
+            </label>
+          </div>
+        </div>
+
+        <!-- Contact -->
+        <div class="row">
+          <div class="input-group">
+            <label>Email</label>
+            <input type="email" name="email" required />
+          </div>
+
+          <div class="input-group">
+            <label>Phone Number</label>
+            <input type="tel" name="phone" required />
+          </div>
+        </div>
+
+        <!-- Links -->
+        <div class="input-group">
+          <label>LinkedIn Profile</label>
+          <input type="url" name="linkedin" placeholder="https://linkedin.com/in/username" />
+        </div>
+
+        <div class="input-group">
+          <label>GitHub Profile</label>
+          <input type="url" name="github" placeholder="https://github.com/username" />
+        </div>
+
+        <div class="input-group">
+          <label>Resume Link</label>
+          <input type="url" name="resume" placeholder="Google Drive / Dropbox / Portfolio Link" required />
+        </div>
+
+        <!-- Position -->
+        <div class="input-group">
+          <label>Position Applying For</label>
+
+          <select id="position" name="position" required>
+            <option value="">Select Position</option>
+            <option>Frontend Developer</option>
+            <option>Backend Developer</option>
+            <option>Full Stack Developer</option>
+            <option>UI/UX Designer</option>
+            <option>Marketing Executive</option>
+            <option>HR</option>
+            <option value="Other">Other</option>
+          </select>
+        </div>
+
+        <!-- Other Position -->
+        <div class="input-group hidden" id="otherPositionGroup">
+          <label>Other Position</label>
+          <input type="text" id="otherPosition" name="otherPosition" />
+        </div>
+
+        <!-- Experience -->
+        <div class="input-group">
+          <label>Years of Experience (optional unless mentioned in job description)</label>
+          <input type="number" name="experience" min="0" max="50" />
+        </div>
+
+        <!-- Portfolio -->
+        <div class="input-group">
+          <label>Portfolio Website</label>
+          <input type="url" name="portfolio" placeholder="https://yourportfolio.com" />
+        </div>
+
+        <!-- Additional Message -->
+        <div class="input-group">
+          <label>Additional Message</label>
+          <textarea
+            name="message"
+            rows="5"
+            placeholder="Tell us about yourself..."
+          ></textarea>
+        </div>
+
+        <!-- Submit -->
+        <button type="submit" id="submitBtn">
+          Submit Application
+        </button>
+
+        <!-- Status -->
+        <p id="statusMessage"></p>
+
+      </form>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer glass">
+    <div class="footer-content">
+      <img src="../assets/logo_full.png" alt="Our Logo" class="footer-logo" />
+
+      <p>
+        © 2026 Vervain Labs —
+        <a href="https://vervain-labs.vercel.app/" target="_blank">
+          Visit Our Website
+        </a>
+      </p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
