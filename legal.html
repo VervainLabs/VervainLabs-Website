@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vervain — Legal</title>
+  <meta name="description" content="Productivity and personal knowledge software built to help you think clearly, remember everything, and protect your focus.">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Icons (Lucide/Simple Icons style) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="assets/favicon.png" type="image/png">
+  <link rel="apple-touch-icon" href="assets/favicon.png">
+</head>
+<body>
+    <canvas id="bg-canvas"></canvas>
+
+  <nav>
+    <div class="logo">
+      <img src="assets/logo_symbol.png" alt="Vervain Logo">
+      <span>vervain</span>
+    </div>
+    
+    <div class="nav-actions">
+      <div class="social-links">
+        <a href="https://github.com/VervainLabs" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+        <a href="https://linkedin.com/company/vervain-labs" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://x.com/VervainLabs" target="_blank" aria-label="Twitter/X"><i class="fa-brands fa-twitter"></i>
+          <!-- <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z"/></svg> -->
+        </a>
+        <a href="https://discord.gg/B3cPuWsu3u" target="_blank" aria-label="Discord"><i class="fa-brands fa-discord"></i></a>
+      </div>
+      
+      <button id="theme-toggle" aria-label="Toggle Theme">
+        <!-- Icon injected by JS -->
+      </button>
+    </div>
+  </nav>
+
+
+<!-- HEADER -->
+<!-- <header>
+  <a href="https://vervain-labs.vercel.app/" class="logo">
+    <div class="logo-mark"></div>
+    <span class="logo-name">vervain</span>
+  </a>
+  <span class="header-right">Legal Documents</span>
+</header> -->
+
+<!-- MAIN -->
+<main class="wrapper">
+
+  <!-- HERO -->
+  <div class="hero">
+    <div class="hero-eyebrow">Vervain Labs · Legal</div>
+    <h1 class="hero-title">Our <em>commitments</em><br>to you.</h1>
+
+    <h2><mark>NOTE: This page is under construction therefore some legal things may or may not apply.</mark></h2>
+
+    <div class="hero-meta">
+      <span>Effective: 25 April 2026</span>
+      <span>Jurisdiction: India</span>
+      <span>Governing Law: DPDP Act, 2023</span>
+    </div>
+  </div>
+
+  <!-- PILL TOGGLE -->
+  <div class="toggle-wrap">
+    <div class="pill-toggle">
+      <div class="pill-bg" id="pillBg"></div>
+      <button class="pill-btn active" id="btnPrivacy" onclick="switchTab('privacy')">Privacy Policy</button>
+      <button class="pill-btn" id="btnTerms" onclick="switchTab('terms')">Terms of Service</button>
+    </div>
+  </div>
+
+  <!-- ════════════════════════════════════════
+       PRIVACY POLICY
+  ════════════════════════════════════════ -->
+  <div class="panel active" id="panel-privacy">
+
+    <div class="toc">
+      <div class="toc-label">Table of Contents</div>
+      <ol>
+        <li><a href="#p1">Who We Are</a></li>
+        <li><a href="#p2">Data We Collect</a></li>
+        <li><a href="#p3">How We Use Your Data</a></li>
+        <li><a href="#p4">Legal Bases for Processing</a></li>
+        <li><a href="#p5">Data Sharing &amp; Disclosure</a></li>
+        <li><a href="#p6">Cookies &amp; Tracking</a></li>
+        <li><a href="#p7">Location Data</a></li>
+        <li><a href="#p8">Children's Privacy</a></li>
+        <li><a href="#p9">Data Retention</a></li>
+        <li><a href="#p10">Security</a></li>
+        <li><a href="#p11">Your Rights</a></li>
+        <li><a href="#p12">Grievance Officer</a></li>
+        <li><a href="#p13">Changes to this Policy</a></li>
+      </ol>
+    </div>
+
+    <div class="callout">
+      <p><strong>Plain-language summary:</strong> We collect only what we need to run our products. We do not sell your data. You have the right to access, correct, and delete your data. Questions? Reach us at <span class="contact-email">privacy@vervainlabs.com</span></p>
+    </div>
+
+    <!-- 1 -->
+    <div class="legal-section" id="p1" style="opacity: 1; transform: translateY(0px); transition: opacity 0.5s, transform 0.5s;">
+      <div class="section-number">01</div>
+      <h2 class="section-title">Who We Are</h2>
+      <p>Vervain Labs ("Company", "we", "us", or "our") is a technology company incorporated under the laws of India, engaged in the development and distribution of productivity and personal knowledge software, including but not limited to Oren, and marketplace services connecting consumers with third-party service providers.</p>
+      <p>This Privacy Policy governs the collection, use, storage, disclosure, and protection of personal data when you use any product, website, application, or service operated by Vervain Labs (collectively, the "Services"). By accessing or using our Services, you acknowledge that you have read, understood, and agree to be bound by this Privacy Policy.</p>
+      <p>This Policy is published in compliance with the Digital Personal Data Protection Act, 2023 (India) ("DPDP Act"), the Information Technology (Reasonable Security Practices and Procedures and Sensitive Personal Data or Information) Rules, 2011, and other applicable laws.</p>
+    </div>
+
+    <!-- 2 -->
+    <div class="legal-section" id="p2" style="opacity: 1; transform: translateY(0px); transition: opacity 0.5s 0.04s, transform 0.5s 0.04s;">
+      <div class="section-number">02</div>
+      <h2 class="section-title">Data We Collect</h2>
+      <p>We collect personal data that you provide directly, that we generate automatically through your use of our Services, and that we receive from third-party sources. The categories of personal data we collect include:</p>
+
+      <div class="sub-heading">A. Data You Provide Directly</div>
+      <ul>
+        <li>Identity data: full name, username, or nickname</li>
+        <li>Contact data: email address, phone number</li>
+        <li>Authentication data: hashed passwords, session tokens, multi-factor authentication credentials</li>
+        <li>Profile data: preferences, settings, and configurations you establish within our Services</li>
+        <li>Payment data: billing name, billing address, and payment instrument details. Note: full payment card data is processed exclusively by our third-party payment processors; we do not store raw card numbers, CVV codes, or equivalent sensitive payment information on our systems</li>
+        <li>User-generated content: notes, diary entries, documents, drawings, snippets, and any other content you create or upload within our Services</li>
+        <li>Communications: messages, support requests, and correspondence you send us</li>
+      </ul>
+
+      <div class="sub-heading">B. Data We Collect Automatically</div>
+      <ul>
+        <li>Device identifiers: device type, operating system, browser type and version, hardware model, unique device identifiers</li>
+        <li>Usage data: features accessed, actions performed, session duration, frequency of use, error logs, crash reports</li>
+        <li>Network data: IP address, internet service provider, referring URL, exit pages</li>
+        <li>Performance data: application performance metrics, response times, and diagnostic information</li>
+        <li>Location data: precise or approximate geographic location, derived from GPS signals, Wi-Fi networks, cell tower data, or IP address, depending on the Service used and permissions granted</li>
+      </ul>
+
+      <div class="sub-heading">C. Data from Third Parties</div>
+      <ul>
+        <li>Authentication providers: if you use social sign-on (Google, etc.), we receive your name, email address, and profile picture as permitted by that provider and your privacy settings</li>
+        <li>Payment processors: transaction status, payment confirmation references, and fraud signals</li>
+        <li>Analytics providers: aggregated and pseudonymised behavioral data</li>
+        <li>Service partners: where our marketplace Services connect you with third-party vendors, we may receive data relevant to service fulfillment</li>
+      </ul>
+    </div>
+
+    <!-- 3 -->
+    <div class="legal-section" id="p3" style="opacity: 1; transform: translateY(0px); transition: opacity 0.5s 0.08s, transform 0.5s 0.08s;">
+      <div class="section-number">03</div>
+      <h2 class="section-title">How We Use Your Data</h2>
+      <p>We use your personal data solely for the purposes described below. We do not use your data for purposes incompatible with those for which it was originally collected without obtaining your separate consent.</p>
+      <ul>
+        <li>To create and maintain your account, verify your identity, and authenticate your access to our Services</li>
+        <li>To provide, operate, maintain, and improve our Services, including developing new features and resolving technical issues</li>
+        <li>To process payments, manage subscriptions, issue invoices, and handle billing disputes</li>
+        <li>To match you with relevant third-party service providers on our marketplace platforms, and to facilitate fulfillment of services</li>
+        <li>To personalize your experience, including applying your preferences and location to show you relevant content and providers</li>
+        <li>To communicate with you regarding your account, transactions, service updates, security alerts, and support inquiries</li>
+        <li>To send you promotional communications, where you have provided consent or where permitted by law, with a clear mechanism to opt out</li>
+        <li>To conduct analytics and research to understand how our Services are used and to improve product quality</li>
+        <li>To detect, investigate, and prevent fraudulent transactions, unauthorized access, security threats, and other prohibited or illegal activities</li>
+        <li>To comply with legal obligations, enforce our Terms of Service, and protect the rights, property, and safety of Vervain Labs, our users, and the public</li>
+      </ul>
+    </div>
+
+    <!-- 4 -->
+    <div class="legal-section" id="p4" style="opacity: 1; transform: translateY(0px); transition: opacity 0.5s 0.12s, transform 0.5s 0.12s;">
+      <div class="section-number">04</div>
+      <h2 class="section-title">Legal Bases for Processing</h2>
+      <p>Under the DPDP Act, 2023, we process your personal data on the following legal grounds:</p>
+      <ul>
+        <li><strong style="color:var(--text-1)">Consent:</strong> Where you have provided clear, informed, and unambiguous consent to process your data for a specific purpose. You may withdraw consent at any time; withdrawal does not affect the lawfulness of processing prior to withdrawal.</li>
+        <li><strong style="color:var(--text-1)">Contractual necessity:</strong> Where processing is necessary to perform a contract with you or to take pre-contractual steps at your request.</li>
+        <li><strong style="color:var(--text-1)">Legal obligation:</strong> Where processing is necessary to comply with a legal obligation imposed on Vervain Labs under applicable law.</li>
+        <li><strong style="color:var(--text-1)">Legitimate interests:</strong> Where processing is necessary for the purposes of our legitimate interests, provided such interests do not override your fundamental rights and freedoms. Such interests include fraud prevention, security, and improving our Services.</li>
+        <li><strong style="color:var(--text-1)">Vital interests:</strong> Where processing is necessary to protect the vital interests of any individual.</li>
+      </ul>
+    </div>
+
+    <!-- 5 -->
+    <div class="legal-section" id="p5" style="opacity: 1; transform: translateY(0px); transition: opacity 0.5s 0.16s, transform 0.5s 0.16s;">
+      <div class="section-number">05</div>
+      <h2 class="section-title">Data Sharing &amp; Disclosure</h2>
+      <p>We do not sell, rent, or trade your personal data to third parties. We may share your personal data only in the following circumstances:</p>
+      <ul>
+        <li><strong style="color:var(--text-1)">Service providers:</strong> We engage third-party vendors (cloud hosting, analytics, payment processors, customer support platforms) who process data on our behalf under strict data processing agreements that prohibit them from using your data for their own purposes.</li>
+        <li><strong style="color:var(--text-1)">Marketplace partners:</strong> On our marketplace services, we share necessary data with third-party service providers (e.g., laundry vendors) solely to facilitate service fulfillment. The scope of data shared is limited to what is strictly necessary.</li>
+        <li><strong style="color:var(--text-1)">Business transfers:</strong> In the event of a merger, acquisition, reorganization, or sale of all or substantially all of our assets, your data may be transferred to the successor entity. We will notify you prior to such transfer and provide you with an opportunity to object.</li>
+        <li><strong style="color:var(--text-1)">Legal requirements:</strong> We may disclose your data to government authorities, law enforcement agencies, or courts where required by law, judicial order, or governmental authority, or where we believe in good faith that such disclosure is necessary to protect our legal rights or to prevent harm.</li>
+        <li><strong style="color:var(--text-1)">With your consent:</strong> We may share your data with third parties where you have given us explicit consent to do so.</li>
+      </ul>
+      <p>All third parties with whom we share personal data are bound by contractual obligations to maintain the confidentiality and security of your data and to use it only for the purposes specified by us.</p>
+    </div>
+
+    <!-- 6 -->
+    <div class="legal-section" id="p6" style="opacity: 0; transform: translateY(16px); transition: opacity 0.5s 0.2s, transform 0.5s 0.2s;">
+      <div class="section-number">06</div>
+      <h2 class="section-title">Cookies &amp; Tracking Technologies</h2>
+      <p>We and our third-party partners use cookies, web beacons, pixel tags, local storage, and similar tracking technologies to operate our web-based Services, remember your preferences, and understand how users interact with our platforms.</p>
+      <div class="sub-heading">Types of Cookies We Use</div>
+      <ul>
+        <li><strong style="color:var(--text-1)">Strictly necessary cookies:</strong> Required for the operation of our Services. These cannot be disabled without impairing functionality.</li>
+        <li><strong style="color:var(--text-1)">Performance cookies:</strong> Collect anonymised data about how visitors use our Services to help us improve them.</li>
+        <li><strong style="color:var(--text-1)">Functionality cookies:</strong> Remember your preferences and settings to provide an enhanced, personalized experience.</li>
+        <li><strong style="color:var(--text-1)">Targeting and analytics cookies:</strong> Used by us and our analytics partners to understand usage patterns, measure campaign effectiveness, and serve relevant content. These cookies may collect data across sessions and platforms.</li>
+      </ul>
+      <p>You may control and manage cookies through your browser settings or through consent management tools we provide. Disabling certain cookies may affect the functionality of our Services. For our desktop applications (such as Oren), data is stored locally on your device and traditional web cookies are not applicable.</p>
+    </div>
+
+    <!-- 7 -->
+    <div class="legal-section" id="p7" style="opacity: 0; transform: translateY(16px); transition: opacity 0.5s 0.24s, transform 0.5s 0.24s;">
+      <div class="section-number">07</div>
+      <h2 class="section-title">Location Data</h2>
+      <p>Certain Services, in particular our marketplace platforms connecting users with local service providers, require access to your geographic location to function as intended. We collect location data in the following circumstances:</p>
+      <ul>
+        <li>Precise location (GPS): collected only when you grant explicit permission through your device's operating system. This permission can be revoked at any time through your device settings.</li>
+        <li>Approximate location: derived from your IP address or network identifiers, used for general service delivery and fraud prevention.</li>
+        <li>Saved locations: addresses or locations you voluntarily save within our Services for convenience.</li>
+      </ul>
+      <p>Location data is used solely to match you with geographically relevant service providers and to facilitate service delivery. We do not continuously collect your location in the background beyond what is necessary for active use of location-dependent features. Location data may be shared with third-party service providers in our marketplace solely for the purpose of enabling service fulfillment.</p>
+    </div>
+
+    <!-- 8 -->
+    <div class="legal-section" id="p8" style="opacity: 0; transform: translateY(16px); transition: opacity 0.5s 0.28s, transform 0.5s 0.28s;">
+      <div class="section-number">08</div>
+      <h2 class="section-title">Children's Privacy</h2>
+      <p>Vervain Labs takes the protection of minors' personal data with the utmost seriousness. In compliance with the Digital Personal Data Protection Act, 2023, the following provisions apply:</p>
+      <ul>
+        <li>We do not knowingly collect personal data from children under the age of 13 without verifiable parental or guardian consent.</li>
+        <li>For users between the ages of 13 and 18, we require verifiable consent from a parent or legal guardian before processing any personal data. Self-declared age is insufficient; we implement age-verification mechanisms appropriate to the Service.</li>
+        <li>We do not process the personal data of minors in a manner that could cause harm to their well-being, target them with behavioural advertising, or profile them for commercial purposes.</li>
+        <li>Parents or guardians who believe their minor child's data has been collected without proper consent should contact our Grievance Officer immediately. We will promptly investigate and, where appropriate, delete such data.</li>
+        <li>Features or Services determined to be unsuitable for minors will be age-gated and access restricted accordingly.</li>
+      </ul>
+    </div>
+
+    <!-- 9 -->
+    <div class="legal-section" id="p9" style="opacity: 0; transform: translateY(16px); transition: opacity 0.5s 0.32s, transform 0.5s 0.32s;">
+      <div class="section-number">09</div>
+      <h2 class="section-title">Data Retention</h2>
+      <p>We retain your personal data for no longer than is necessary to fulfil the purposes for which it was collected, including for the purposes of satisfying any legal, accounting, or reporting requirements. The criteria used to determine our retention periods include:</p>
+      <ul>
+        <li>The duration of your account with us and your active use of our Services</li>
+        <li>Legal obligations requiring us to retain data for a minimum period (e.g., financial records under applicable tax laws)</li>
+        <li>Periods during which a claim could be made with respect to our Services</li>
+        <li>Any applicable statute of limitations under Indian law</li>
+      </ul>
+      <p>Upon account deletion, your personal data will be deleted or anonymised within 30 days, except where retention is required by applicable law or for the resolution of disputes. User-generated content stored locally on your device (e.g., Oren notes) remains under your sole control and is not affected by account deletion.</p>
+    </div>
+
+    <!-- 10 -->
+    <div class="legal-section" id="p10" style="opacity: 0; transform: translateY(16px); transition: opacity 0.5s 0.36s, transform 0.5s 0.36s;">
+      <div class="section-number">10</div>
+      <h2 class="section-title">Security</h2>
+      <p>We implement appropriate technical and organisational measures designed to protect your personal data against accidental or unlawful destruction, loss, alteration, unauthorised disclosure, or access. These measures include, but are not limited to:</p>
+      <ul>
+        <li>Encryption of data in transit using industry-standard TLS protocols</li>
+        <li>Encryption of sensitive data at rest, including diary entries and encrypted notes within applicable products</li>
+        <li>Access controls and authentication requirements for systems that process personal data</li>
+        <li>Regular security assessments, vulnerability testing, and code reviews</li>
+        <li>Strict data access controls on a need-to-know basis for our personnel</li>
+        <li>Third-party processor due diligence and contractual security requirements</li>
+      </ul>
+      <p>No method of transmission over the internet or method of electronic storage is completely secure. While we strive to use commercially acceptable means to protect your personal data, we cannot guarantee its absolute security. In the event of a data breach that is likely to result in a high risk to your rights, we will notify you as required under applicable law.</p>
+    </div>
+
+    <!-- 11 -->
+    <div class="legal-section" id="p11" style="opacity: 0; transform: translateY(16px); transition: opacity 0.5s 0.4s, transform 0.5s 0.4s;">
+      <div class="section-number">11</div>
+      <h2 class="section-title">Your Rights</h2>
+      <p>Under the DPDP Act, 2023, and other applicable laws, you have the following rights with respect to your personal data:</p>
+      <ul>
+        <li><strong style="color:var(--text-1)">Right to access:</strong> You have the right to obtain confirmation of whether we process your personal data and, if so, to receive a copy of that data and information about how it is processed.</li>
+        <li><strong style="color:var(--text-1)">Right to correction:</strong> You have the right to request correction of inaccurate or incomplete personal data we hold about you.</li>
+        <li><strong style="color:var(--text-1)">Right to erasure:</strong> You have the right to request deletion of your personal data where there is no legitimate reason for us to continue processing it.</li>
+        <li><strong style="color:var(--text-1)">Right to withdraw consent:</strong> Where processing is based on your consent, you have the right to withdraw that consent at any time, without affecting the lawfulness of processing prior to withdrawal.</li>
+        <li><strong style="color:var(--text-1)">Right to nominate:</strong> Under the DPDP Act, you may nominate another individual to exercise your rights on your behalf in the event of your death or incapacity.</li>
+        <li><strong style="color:var(--text-1)">Right to grievance redressal:</strong> You have the right to have your grievances addressed by our Grievance Officer and, if unsatisfied, to approach the Data Protection Board of India.</li>
+      </ul>
+      <p>To exercise any of these rights, please submit a written request to our Grievance Officer at the contact details below. We will respond to your request within the timeframes prescribed by applicable law. We may require you to verify your identity before processing your request.</p>
+    </div>
+
+    <!-- 12 -->
+    <div class="legal-section" id="p12" style="opacity: 0; transform: translateY(16px); transition: opacity 0.5s 0.44s, transform 0.5s 0.44s;">
+      <div class="section-number">12</div>
+      <h2 class="section-title">Grievance Officer</h2>
+      <p>In accordance with the Information Technology Act, 2000 and the Digital Personal Data Protection Act, 2023, we have appointed a Grievance Officer to address any concerns regarding the processing of your personal data.</p>
+      <div class="contact-block">
+        <span class="contact-label">Grievance Officer · Vervain Labs</span>
+        <p>Name: [Grievance Officer Name]<br>
+        Designation: Data Protection Officer<br>
+        Email: <span class="contact-email">privacy@vervainlabs.com</span><br>
+        Address: [Registered Office Address], India</p>
+      </div>
+      <p style="margin-top: 16px;">You may submit a grievance in writing to the above contact. We will acknowledge your complaint within 48 hours and endeavour to resolve it within 30 days of receipt. If you are unsatisfied with our response, you may escalate your complaint to the Data Protection Board of India once constituted under the DPDP Act.</p>
+    </div>
+
+    <!-- 13 -->
+    <div class="legal-section" id="p13" style="opacity: 0; transform: translateY(16px); transition: opacity 0.5s 0.48s, transform 0.5s 0.48s;">
+      <div class="section-number">13</div>
+      <h2 class="section-title">Changes to this Policy</h2>
+      <p>We reserve the right to update or modify this Privacy Policy at any time. When we make material changes, we will provide you with prominent notice through our Services or by email prior to the change becoming effective. The "Effective Date" at the top of this Policy reflects the date of the most recent revision.</p>
+      <p>Your continued use of our Services after the effective date of any update constitutes your acceptance of the revised Policy. If you do not agree to the updated Policy, you should discontinue use of our Services and contact us to request deletion of your data.</p>
+    </div>
+
+  </div>
+  <!-- END PRIVACY -->
+
+
+  <!-- ════════════════════════════════════════
+       TERMS OF SERVICE
+  ════════════════════════════════════════ -->
+  <div class="panel" id="panel-terms">
+
+    <div class="toc">
+      <div class="toc-label">Table of Contents</div>
+      <ol>
+        <li><a href="#t1">Acceptance of Terms</a></li>
+        <li><a href="#t2">Definitions</a></li>
+        <li><a href="#t3">Eligibility</a></li>
+        <li><a href="#t4">Accounts &amp; Registration</a></li>
+        <li><a href="#t5">Licence to Use Services</a></li>
+        <li><a href="#t6">User Obligations</a></li>
+        <li><a href="#t7">Prohibited Conduct</a></li>
+        <li><a href="#t8">Subscriptions &amp; Payments</a></li>
+        <li><a href="#t9">Marketplace Services</a></li>
+        <li><a href="#t10">Intellectual Property</a></li>
+        <li><a href="#t11">Disclaimers</a></li>
+        <li><a href="#t12">Limitation of Liability</a></li>
+        <li><a href="#t13">Indemnification</a></li>
+        <li><a href="#t14">Termination</a></li>
+        <li><a href="#t15">Governing Law &amp; Disputes</a></li>
+        <li><a href="#t16">Miscellaneous</a></li>
+      </ol>
+    </div>
+
+    <div class="callout">
+      <p><strong>Important:</strong> These Terms constitute a legally binding agreement between you and Vervain Labs. Please read them carefully before using our Services. If you do not agree, do not use our Services.</p>
+    </div>
+
+    <!-- T1 -->
+    <div class="legal-section" id="t1" style="opacity: 0; transform: translateY(16px); transition: opacity 0.5s 0.52s, transform 0.5s 0.52s;">
+      <div class="section-number">01</div>
+      <h2 class="section-title">Acceptance of Terms</h2>
+      <p>These Terms of Service ("Terms") govern your access to and use of all websites, applications, software, and services (collectively, the "Services") provided by Vervain Labs ("Company", "we", "us", or "our"). By creating an account, downloading any application, accessing any website, or otherwise using any Service, you ("User", "you", or "your") agree to be bound by these Terms and our Privacy Policy, which is incorporated herein by reference.</p>
+      <p>If you are accessing the Services on behalf of an organisation, you represent and warrant that you have the authority to bind that organisation to these Terms, and references to "you" in these Terms shall include such organisation.</p>
+      <p>We reserve the right to modify these Terms at any time. Continued use of the Services after notification of changes constitutes acceptance of the revised Terms.</p>
+    </div>
+
+    <!-- T2 -->
+    <div class="legal-section" id="t2" style="opacity: 0; transform: translateY(16px); transition: opacity 0.5s 0.56s, transform 0.5s 0.56s;">
+      <div class="section-number">02</div>
+      <h2 class="section-title">Definitions</h2>
+      <ul>
+        <li><strong style="color:var(--text-1)">"Services"</strong> means all products, applications, platforms, websites, and services operated or provided by Vervain Labs, including Oren and any marketplace platform.</li>
+        <li><strong style="color:var(--text-1)">"User Content"</strong> means any data, text, files, documents, images, or other content submitted, uploaded, or created by you within the Services.</li>
+        <li><strong style="color:var(--text-1)">"Subscription"</strong> means any paid plan providing access to premium features of the Services.</li>
+        <li><strong style="color:var(--text-1)">"Vendor"</strong> means any third-party service provider listed on our marketplace platforms.</li>
+        <li><strong style="color:var(--text-1)">"Intellectual Property Rights"</strong> means all patents, copyrights, trademarks, trade secrets, database rights, and all other intellectual or industrial property rights, whether registered or unregistered.</li>
+        <li><strong style="color:var(--text-1)">"Applicable Law"</strong> means all laws, regulations, rules, orders, and codes applicable to the Services, including but not limited to the DPDP Act, 2023, the Information Technology Act, 2000, the Consumer Protection Act, 2019, and the Indian Contract Act, 1872.</li>
+      </ul>
+    </div>
+
+    <!-- T3 -->
+    <div class="legal-section" id="t3" style="opacity: 0; transform: translateY(16px); transition: opacity 0.5s 0.6s, transform 0.5s 0.6s;">
+      <div class="section-number">03</div>
+      <h2 class="section-title">Eligibility</h2>
+      <p>You must be at least 13 years of age to use our Services. If you are between 13 and 18 years of age, you may only use our Services with the verifiable consent of a parent or legal guardian, who by providing such consent agrees to be bound by these Terms on your behalf and accepts responsibility for your use of the Services.</p>
+      <p>Certain Services or features may have higher age requirements. Where specified, you must meet those requirements to access such features.</p>
+      <p>By using the Services, you represent and warrant that: (a) you meet the applicable age requirements; (b) you have the full right, power, and authority to enter into these Terms; (c) your use of the Services will not violate any applicable law or regulation; and (d) you are not located in a jurisdiction where providing the Services to you would be prohibited.</p>
+    </div>
+
+    <!-- T4 -->
+    <div class="legal-section" id="t4" style="opacity: 0; transform: translateY(16px); transition: opacity 0.5s 0.64s, transform 0.5s 0.64s;">
+      <div class="section-number">04</div>
+      <h2 class="section-title">Accounts &amp; Registration</h2>
+      <p>Certain features of our Services require you to register for an account. When registering, you agree to provide accurate, current, and complete information and to keep that information updated.</p>
+      <ul>
+        <li>You are solely responsible for maintaining the confidentiality of your account credentials and for all activities that occur under your account.</li>
+        <li>You must notify us immediately at <span class="contact-email">support@vervainlabs.com</span> upon becoming aware of any actual or suspected unauthorized access to or use of your account.</li>
+        <li>You may not share your account credentials with any other person or allow any other person to access your account.</li>
+        <li>We reserve the right to refuse registration, cancel accounts, or remove content at our sole discretion.</li>
+        <li>Each person may maintain only one active account unless expressly permitted by us. Creating duplicate accounts to circumvent restrictions is prohibited.</li>
+      </ul>
+    </div>
+
+    <!-- T5 -->
+    <div class="legal-section" id="t5" style="opacity: 0; transform: translateY(16px); transition: opacity 0.5s 0.68s, transform 0.5s 0.68s;">
+      <div class="section-number">05</div>
+      <h2 class="section-title">Licence to Use Services</h2>
+      <p>Subject to your compliance with these Terms and payment of any applicable fees, Vervain Labs grants you a limited, non-exclusive, non-transferable, non-sublicensable, revocable licence to access and use the Services solely for your personal, non-commercial purposes, or as expressly permitted for commercial use under a separate written agreement.</p>
+      <p>With respect to downloadable software applications (such as Oren), we grant you a limited licence to install and use the application on devices you own or control, solely for your personal use, in accordance with these Terms and any additional documentation provided.</p>
+      <p>Nothing in these Terms shall be construed as conferring any rights in respect of the source code of any software, or any rights to reverse engineer, decompile, or disassemble any software provided as part of the Services, except to the extent expressly permitted by applicable law.</p>
+    </div>
+
+    <!-- T6 -->
+    <div class="legal-section" id="t6" style="opacity: 0; transform: translateY(16px); transition: opacity 0.5s 0.72s, transform 0.5s 0.72s;">
+      <div class="section-number">06</div>
+      <h2 class="section-title">User Obligations</h2>
+      <p>As a condition of using our Services, you agree to the following obligations:</p>
+      <ul>
+        <li>Comply with all applicable laws and regulations in your jurisdiction and those applicable to your use of the Services.</li>
+        <li>Provide accurate and truthful information when creating an account, placing orders, or otherwise interacting with our Services or Vendors.</li>
+        <li>Use the Services only for lawful purposes and in a manner consistent with these Terms.</li>
+        <li>Respect the rights of other users, Vendors, and third parties, including their privacy and intellectual property rights.</li>
+        <li>Promptly notify us of any security vulnerabilities, suspected breaches, or misuse of the Services that you become aware of.</li>
+        <li>Comply with any applicable professional, ethical, or regulatory obligations relevant to your use of the Services in a professional context.</li>
+      </ul>
+    </div>
+
+    <!-- T7 -->
+    <div class="legal-section" id="t7" style="opacity: 0; transform: translateY(16px); transition: opacity 0.5s 0.76s, transform 0.5s 0.76s;">
+      <div class="section-number">07</div>
+      <h2 class="section-title">Prohibited Conduct</h2>
+      <p>You expressly agree that you shall not, and shall not permit or encourage any third party to:</p>
+      <ul>
+        <li>Use the Services to transmit, store, display, or distribute any content that is unlawful, defamatory, obscene, pornographic, abusive, harassing, threatening, or otherwise objectionable.</li>
+        <li>Attempt to gain unauthorised access to the Services, other accounts, computer systems, or networks connected to the Services.</li>
+        <li>Interfere with, disrupt, or impair the operation of the Services or any servers or networks connected to the Services, including through the introduction of malware, viruses, or other harmful code.</li>
+        <li>Use automated means (bots, scrapers, crawlers, etc.) to access, monitor, or copy content from our Services without our express written consent.</li>
+        <li>Circumvent, disable, or otherwise interfere with security-related features of the Services.</li>
+        <li>Use the Services to engage in any fraudulent activity, including misrepresenting your identity, impersonating any person or entity, or submitting false service requests on our marketplace platforms.</li>
+        <li>Use the Services to collect personal data of other users without their consent.</li>
+        <li>Reproduce, duplicate, copy, sell, resell, or exploit any portion of the Services without express written permission from Vervain Labs.</li>
+        <li>Use the Services in a manner that could expose Vervain Labs to liability or reputational harm.</li>
+      </ul>
+    </div>
+
+    <!-- T8 -->
+    <div class="legal-section" id="t8" style="opacity: 0; transform: translateY(16px); transition: opacity 0.5s 0.8s, transform 0.5s 0.8s;">
+      <div class="section-number">08</div>
+      <h2 class="section-title">Subscriptions &amp; Payments</h2>
+      <p>Certain features of our Services are available only upon payment of applicable subscription fees. The following terms apply to all paid subscriptions:</p>
+      <div class="sub-heading">Billing &amp; Renewal</div>
+      <ul>
+        <li>Subscriptions are billed on a recurring basis (monthly or annually, as selected) in advance. Your subscription will automatically renew at the end of each billing cycle unless cancelled prior to the renewal date.</li>
+        <li>You authorise us, or our designated payment processor, to charge your payment method on a recurring basis for the applicable subscription fee.</li>
+        <li>Prices are subject to change. We will provide advance notice of any price changes, which will take effect at the next renewal date following notice.</li>
+      </ul>
+      <div class="sub-heading">Cancellation &amp; Refunds</div>
+      <ul>
+        <li>You may cancel your subscription at any time through your account settings. Cancellation will take effect at the end of the current billing cycle; you will retain access to paid features until that date.</li>
+        <li>Refunds are not provided for partial periods of service, except as required by applicable law (including the Consumer Protection Act, 2019) or as expressly stated in our refund policy.</li>
+        <li>We reserve the right to offer promotional pricing, which may be subject to additional terms.</li>
+      </ul>
+      <div class="sub-heading">Payment Processing</div>
+      <p>Payments are processed by third-party payment processors. By providing your payment information, you authorise the relevant payment processor to store and use such information in accordance with their terms and privacy policy. Vervain Labs does not store raw payment card data.</p>
+    </div>
+
+    <!-- T9 -->
+    <div class="legal-section" id="t9" style="opacity: 0; transform: translateY(16px); transition: opacity 0.5s 0.84s, transform 0.5s 0.84s;">
+      <div class="section-number">09</div>
+      <h2 class="section-title">Marketplace Services</h2>
+      <p>Where Vervain Labs operates a marketplace platform connecting users with third-party service providers ("Vendors"), the following additional terms apply:</p>
+      <div class="sub-heading">Nature of the Platform</div>
+      <p>Vervain Labs acts as an intermediary platform facilitating the connection between users and Vendors. We are not a party to any contract for services entered into between a user and a Vendor, nor do we provide the services offered by Vendors. The contract for services is between you and the Vendor directly.</p>
+      <div class="sub-heading">Vendor Representations</div>
+      <ul>
+        <li>Vendors listed on our platforms are independent third parties. We do not employ Vendors and are not responsible for the quality, safety, or legality of the services they provide.</li>
+        <li>We conduct reasonable verification checks on Vendors prior to listing, but do not guarantee or warrant the accuracy of Vendor information or the quality of their services.</li>
+        <li>You are encouraged to review Vendor ratings, reviews, and profiles before engaging their services.</li>
+      </ul>
+      <div class="sub-heading">Disputes with Vendors</div>
+      <p>In the event of a dispute between you and a Vendor, we will endeavour to assist with dispute resolution but are not obligated to do so. Our liability in connection with any transaction between you and a Vendor is limited as set forth in the Limitation of Liability section below.</p>
+    </div>
+
+    <!-- T10 -->
+    <div class="legal-section" id="t10" style="opacity: 0; transform: translateY(16px); transition: opacity 0.5s 0.88s, transform 0.5s 0.88s;">
+      <div class="section-number">10</div>
+      <h2 class="section-title">Intellectual Property</h2>
+      <div class="sub-heading">Vervain Labs' Intellectual Property</div>
+      <p>The Services and all content, features, and functionality thereof — including but not limited to software, source code, text, graphics, logos, trademarks, and the overall design and arrangement thereof — are owned by Vervain Labs or our licensors and are protected by applicable intellectual property laws. No rights in Vervain Labs' intellectual property are transferred to you under these Terms other than the limited licence expressly granted herein.</p>
+      <div class="sub-heading">Your User Content</div>
+      <p>You retain all ownership rights in your User Content. By submitting User Content to our cloud-based Services, you grant Vervain Labs a limited, non-exclusive, royalty-free, worldwide licence to host, store, transmit, and display your User Content solely as necessary to provide the Services to you. This licence terminates when you delete your User Content or your account.</p>
+      <p>For desktop applications that store data solely on your local device (such as Oren), no such licence is granted and your User Content remains exclusively on your device.</p>
+      <p>You represent and warrant that you own or have all necessary rights to submit your User Content and that doing so does not infringe any third-party rights.</p>
+    </div>
+
+    <!-- T11 -->
+    <div class="legal-section" id="t11" style="opacity: 0; transform: translateY(16px); transition: opacity 0.5s 0.92s, transform 0.5s 0.92s;">
+      <div class="section-number">11</div>
+      <h2 class="section-title">Disclaimers</h2>
+      <p>THE SERVICES ARE PROVIDED ON AN "AS IS" AND "AS AVAILABLE" BASIS, WITHOUT WARRANTIES OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, NON-INFRINGEMENT, OR COURSE OF PERFORMANCE.</p>
+      <p>VERVAIN LABS DOES NOT WARRANT THAT: (a) THE SERVICES WILL BE UNINTERRUPTED, SECURE, OR ERROR-FREE; (b) ANY DEFECTS OR ERRORS WILL BE CORRECTED; (c) THE SERVICES ARE FREE OF VIRUSES OR OTHER HARMFUL COMPONENTS; OR (d) THE RESULTS OBTAINED FROM USING THE SERVICES WILL BE ACCURATE OR RELIABLE.</p>
+      <p>WHERE APPLICABLE CONSUMER PROTECTION LAW PROHIBITS THE DISCLAIMER OF CERTAIN WARRANTIES, THE ABOVE DISCLAIMERS MAY NOT APPLY TO YOU TO THE EXTENT PROHIBITED BY SUCH LAW.</p>
+    </div>
+
+    <!-- T12 -->
+    <div class="legal-section" id="t12" style="opacity: 0; transform: translateY(16px); transition: opacity 0.5s 0.96s, transform 0.5s 0.96s;">
+      <div class="section-number">12</div>
+      <h2 class="section-title">Limitation of Liability</h2>
+      <p>TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, VERVAIN LABS AND ITS DIRECTORS, OFFICERS, EMPLOYEES, AGENTS, PARTNERS, AND LICENSORS SHALL NOT BE LIABLE FOR:</p>
+      <ul>
+        <li>Any indirect, incidental, special, consequential, punitive, or exemplary damages, including but not limited to loss of profits, data, goodwill, or business opportunity;</li>
+        <li>Any loss or damage arising from your reliance on the Services or from any transaction between you and a Vendor;</li>
+        <li>Any loss or damage resulting from unauthorised access to or alteration of your data, other than where caused by our gross negligence or wilful misconduct;</li>
+        <li>Any loss or damage arising from events beyond our reasonable control.</li>
+      </ul>
+      <p>TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, OUR TOTAL AGGREGATE LIABILITY TO YOU FOR ANY CLAIMS ARISING FROM THESE TERMS OR YOUR USE OF THE SERVICES SHALL NOT EXCEED THE GREATER OF: (a) THE AMOUNT YOU PAID TO US IN THE TWELVE (12) MONTHS PRECEDING THE CLAIM; OR (b) INR 5,000 (FIVE THOUSAND RUPEES).</p>
+      <p>Nothing in these Terms shall limit or exclude liability for death or personal injury caused by negligence, fraud or fraudulent misrepresentation, or any other liability that cannot be excluded or limited by applicable law.</p>
+    </div>
+
+    <!-- T13 -->
+    <div class="legal-section" id="t13" style="opacity: 0; transform: translateY(16px); transition: opacity 0.5s 1s, transform 0.5s 1s;">
+      <div class="section-number">13</div>
+      <h2 class="section-title">Indemnification</h2>
+      <p>You agree to defend, indemnify, and hold harmless Vervain Labs and its directors, officers, employees, agents, partners, and licensors from and against any claims, liabilities, damages, losses, costs, and expenses (including reasonable legal fees) arising out of or in any way connected with:</p>
+      <ul>
+        <li>Your breach of these Terms or any applicable law or regulation;</li>
+        <li>Your User Content, including any claim that your User Content infringes the intellectual property, privacy, or other rights of any third party;</li>
+        <li>Your use or misuse of the Services;</li>
+        <li>Your interactions with any Vendor or other third party through our marketplace platforms;</li>
+        <li>Your violation of any rights of another person or entity.</li>
+      </ul>
+      <p>We reserve the right to assume exclusive control of any matter otherwise subject to indemnification by you, in which case you agree to cooperate with our defence of such matter. Your indemnification obligations will survive termination of these Terms.</p>
+    </div>
+
+    <!-- T14 -->
+    <div class="legal-section" id="t14" style="opacity: 0; transform: translateY(16px); transition: opacity 0.5s 1.04s, transform 0.5s 1.04s;">
+      <div class="section-number">14</div>
+      <h2 class="section-title">Termination</h2>
+      <p>These Terms are effective until terminated by either you or us. You may terminate your account at any time by contacting us or using account deletion functionality within the Services.</p>
+      <p>We may suspend or terminate your access to the Services, with or without notice, at our sole discretion, for any of the following reasons:</p>
+      <ul>
+        <li>Material or repeated breach of these Terms;</li>
+        <li>Conduct that poses a legal, security, or reputational risk to Vervain Labs or other users;</li>
+        <li>Non-payment of applicable fees;</li>
+        <li>Upon your request;</li>
+        <li>Where required by applicable law or the order of a competent authority.</li>
+      </ul>
+      <p>Upon termination: your licence to use the Services immediately ceases; we may delete your account and associated data in accordance with our data retention practices; and any provisions of these Terms that by their nature should survive termination shall survive, including Sections 10, 11, 12, 13, and 15.</p>
+    </div>
+
+    <!-- T15 -->
+    <div class="legal-section" id="t15" style="opacity: 0; transform: translateY(16px); transition: opacity 0.5s 1.08s, transform 0.5s 1.08s;">
+      <div class="section-number">15</div>
+      <h2 class="section-title">Governing Law &amp; Disputes</h2>
+      <p>These Terms and any disputes arising out of or in connection with them or your use of the Services shall be governed by and construed in accordance with the laws of India, without regard to conflict of law principles.</p>
+      <div class="sub-heading">Dispute Resolution</div>
+      <p>In the event of any dispute, controversy, or claim arising out of or relating to these Terms or the Services, the parties shall first attempt to resolve the matter amicably through good-faith negotiation. Either party may initiate the negotiation process by providing written notice to the other.</p>
+      <p>If the dispute cannot be resolved through negotiation within 30 days of notice, the parties agree to submit the dispute to binding arbitration in accordance with the Arbitration and Conciliation Act, 1996 (India). The seat and venue of arbitration shall be India. The arbitration shall be conducted in English.</p>
+      <div class="sub-heading">Jurisdiction</div>
+      <p>Notwithstanding the foregoing, either party may seek interim or injunctive relief from a court of competent jurisdiction. Subject to the arbitration clause above, you agree to submit to the exclusive jurisdiction of the courts located in India for any matters not subject to arbitration.</p>
+      <div class="sub-heading">Consumer Rights</div>
+      <p>Nothing in these Terms limits or restricts any rights you may have as a consumer under the Consumer Protection Act, 2019 or other applicable consumer protection legislation.</p>
+    </div>
+
+    <!-- T16 -->
+    <div class="legal-section" id="t16" style="opacity: 0; transform: translateY(16px); transition: opacity 0.5s 1.12s, transform 0.5s 1.12s;">
+      <div class="section-number">16</div>
+      <h2 class="section-title">Miscellaneous</h2>
+      <ul>
+        <li><strong style="color:var(--text-1)">Entire Agreement:</strong> These Terms, together with our Privacy Policy and any additional terms applicable to specific Services, constitute the entire agreement between you and Vervain Labs with respect to the subject matter hereof and supersede all prior understandings, whether written or oral.</li>
+        <li><strong style="color:var(--text-1)">Severability:</strong> If any provision of these Terms is found to be invalid, illegal, or unenforceable by a court of competent jurisdiction, that provision shall be modified to the minimum extent necessary to make it enforceable, and the remaining provisions shall continue in full force and effect.</li>
+        <li><strong style="color:var(--text-1)">Waiver:</strong> Our failure to enforce any provision of these Terms shall not constitute a waiver of that provision or any other provision. Any waiver must be in writing and signed by an authorised representative of Vervain Labs.</li>
+        <li><strong style="color:var(--text-1)">Assignment:</strong> You may not assign your rights or obligations under these Terms without our prior written consent. Vervain Labs may assign these Terms without restriction.</li>
+        <li><strong style="color:var(--text-1)">Force Majeure:</strong> Vervain Labs shall not be liable for any delay or failure to perform resulting from causes beyond our reasonable control, including natural disasters, acts of government, pandemics, labour disputes, or failures of third-party infrastructure.</li>
+        <li><strong style="color:var(--text-1)">Contact:</strong> If you have questions regarding these Terms, please contact us at <span class="contact-email">legal@vervainlabs.com</span>.</li>
+      </ul>
+    </div>
+
+  </div>
+  <!-- END TERMS -->
+
+</main>
+
+<!-- FOOTER -->
+<footer>
+  <p>© 2026 Vervain Labs. All rights reserved.</p>
+  <p>
+    <a href="https://vervain-labs.vercel.app/" style="color: var(--text); text-decoration: none;">Home</a>&nbsp;&nbsp;·&nbsp;
+    <a href="https://github.com/VervainLabs" style="color: var(--text); text-decoration: none;">GitHub</a>
+  </p>
+</footer>
+
+<script src="legalScript.js"></script>
+
+
+
+</body>
+</html>
