@@ -167,6 +167,30 @@ nav {
   box-shadow: 0 15px 30px rgba(91, 75, 138, 0.3);
 }
 
+/* Hero Buttons */
+.hero-actions {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  animation: fadeInUp 1.4s ease;
+}
+
+.secondary-btn {
+  background: transparent;
+  border: 1px solid rgba(255,255,255,0.12);
+
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+
+  box-shadow: none;
+}
+
+.secondary-btn:hover {
+  background: rgba(255,255,255,0.05);
+}
+
 /* About Section */
 .about {
   padding: 8rem 10%;
@@ -220,4 +244,12 @@ footer {
   .social-links { display: none; }
   .hero h1 { font-size: 3rem; }
   footer { flex-direction: column; gap: 1rem; text-align: center; }
+  .hero-actions {
+  flex-direction: column;
+  width: 100%;
+}
+.hero-actions .cta-btn {
+  width: 100%;
+  text-align: center;
+}
 }
