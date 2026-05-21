@@ -41,6 +41,11 @@ positionSelect.addEventListener("change", () => {
 
 form.addEventListener("submit", async (e) => {
 
+  if (!form.checkValidity()) {
+    form.reportValidity();
+    return;
+  }
+
   e.preventDefault();
 
   submitBtn.disabled = true;
@@ -95,7 +100,7 @@ form.addEventListener("submit", async (e) => {
 
     statusMessage.style.color = "#ff6b6b";
     statusMessage.innerText =
-      "Submission failed. Check your internet connection.";
+      "Submission failed. Please try again.";
 
     console.error(error);
 
@@ -153,3 +158,154 @@ document.addEventListener("keydown", (e) => {
     e.preventDefault();
   }
 });
+
+// ========================================
+// BACKGROUND PARTICLE ANIMATION
+// ========================================
+
+const canvas = document.getElementById("bg-canvas");
+
+if (canvas) {
+
+  const ctx = canvas.getContext("2d");
+
+  let particles = [];
+
+  function resizeCanvas() {
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+  }
+
+  resizeCanvas();
+
+  window.addEventListener("resize", resizeCanvas);
+
+  class Particle {
+
+    constructor() {
+
+      this.x = Math.random() * canvas.width;
+      this.y = Math.random() * canvas.height;
+
+      this.radius = Math.random() * 2 + 1;
+
+      this.dx = (Math.random() - 0.5) * 0.4;
+      this.dy = (Math.random() - 0.5) * 0.4;
+    }
+
+    draw() {
+
+      ctx.beginPath();
+
+      ctx.arc(
+        this.x,
+        this.y,
+        this.radius,
+        0,
+        Math.PI * 2
+      );
+
+      ctx.fillStyle =
+        "rgba(255,255,255,0.08)";
+
+      ctx.fill();
+    }
+
+    update() {
+
+      this.x += this.dx;
+      this.y += this.dy;
+
+      // Bounce
+      if (
+        this.x < 0 ||
+        this.x > canvas.width
+      ) {
+        this.dx *= -1;
+      }
+
+      if (
+        this.y < 0 ||
+        this.y > canvas.height
+      ) {
+        this.dy *= -1;
+      }
+
+      this.draw();
+    }
+  }
+
+  function initParticles() {
+
+    particles = [];
+
+    const particleCount =
+      Math.floor(window.innerWidth / 12);
+
+    for (let i = 0; i < particleCount; i++) {
+      particles.push(new Particle());
+    }
+  }
+
+  initParticles();
+
+  function connectParticles() {
+
+    for (let a = 0; a < particles.length; a++) {
+
+      for (let b = a; b < particles.length; b++) {
+
+        const dx =
+          particles[a].x - particles[b].x;
+
+        const dy =
+          particles[a].y - particles[b].y;
+
+        const distance =
+          dx * dx + dy * dy;
+
+        if (distance < 12000) {
+
+          ctx.beginPath();
+
+          ctx.strokeStyle =
+            "rgba(91, 75, 138, 0.08)";
+
+          ctx.lineWidth = 1;
+
+          ctx.moveTo(
+            particles[a].x,
+            particles[a].y
+          );
+
+          ctx.lineTo(
+            particles[b].x,
+            particles[b].y
+          );
+
+          ctx.stroke();
+        }
+      }
+    }
+  }
+
+  function animate() {
+
+    ctx.clearRect(
+      0,
+      0,
+      canvas.width,
+      canvas.height
+    );
+
+    particles.forEach((particle) => {
+      particle.update();
+    });
+
+    connectParticles();
+
+    requestAnimationFrame(animate);
+  }
+
+  animate();
+}
